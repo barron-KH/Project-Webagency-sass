@@ -1,0 +1,12 @@
+
+/*---colors---*/
+
+$colors:(
+    pre:#d3ae87,
+
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+};
+

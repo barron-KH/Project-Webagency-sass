@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webagency</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+    <div class="wrapper">
+  
+        <!--------------- header section starts here --------------->
+
+            <div class="video-container">
+                    <video  autoplay muted loop id="bgvid">
+                            <source src="./video/videobg.mp4" type="video/mp4">
+                    </video>
+            </div>
+
+            <div class="header">
+                    <h1>GREAT & FAST-GROWING AGENCY</h1>
+                    <button id="btn">subscribe</button>
+            </div>
+
+            <!--------- navbar starts here --------->
+
+                <nav class="nav">
+                    <div id="brand">
+                          <a href="index.html"><img src="./img/brand.png" alt="brand of the agengy"></a>
+                    </div>
+
+                  <ul id="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">achievements</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Contact</a></li>
+                  </ul>
+
+                    <div id="nav-resp">
+                        <div>menu</div>
+                    </div>
+
+                </nav>   
+              
+                <div id="resize">
+                    <div class="close-btn">close</div>
+
+                    <ul id="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">achievements</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            <!---------- navbar ends here ---------->
+
+      <!--------------- header section ends here --------------->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+// navigation starts here
+        $("#nav-resp").click(function() {
+                    $(this).toggleClass('on');
+                    $("#resize").toggleClass("active");
+            });
+            $("#resize ul li a").click(function() {
+                    $(this).toggleClass('on');
+                    $("#resize").toggleClass("active");
+            });
+            $(".close-btn").click(function() {
+                    $(this).toggleClass('on');
+                    $("#resize").toggleClass("active");
+            });
+
+            $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".nav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+            });
+
+            
+
+    </script>
+    
+</body>
+</html>

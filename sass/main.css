@@ -17,7 +17,7 @@ html, body {
 /*---variables---*/
 /*--Fichier to import--*/
 /*---class to extend--*/
-.wrapper .header #btn {
+.wrapper .header #btn, .wrapper .content .about .row .more button {
   background: none;
   border: 0.3pt solid rgba(184, 140, 93, 0.7);
   text-transform: uppercase !important;
@@ -50,6 +50,7 @@ html, body {
 .wrapper {
   /*---------------  header section  --------------*/
   /*---------------  navigation  --------------- */
+  /*---------------  about section starts  --------------- */
 }
 
 .wrapper .video-container {
@@ -148,6 +149,13 @@ html, body {
   height: 40px;
   top: 20px;
   position: absolute;
+}
+
+@media (max-width: 900px) {
+  .wrapper .nav #brand img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .wrapper .nav #menu {
@@ -278,5 +286,102 @@ html, body {
   color: #fff;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
+}
+
+.wrapper .content {
+  position: absolute;
+  width: 100%;
+  margin-top: 100vh;
+}
+
+.wrapper .content .about {
+  padding: 140px 0;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .container-about {
+    text-align: center;
+  }
+}
+
+.wrapper .content .about .row {
+  width: 100%;
+}
+
+.wrapper .content .about .row .sec-number {
+  color: #d3ae87;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Poppins" !important;
+}
+
+.wrapper .content .about .row .sec-heading {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  padding: 0 !important;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .row .sec-heading {
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
+
+.wrapper .content .about .row .sec-sub {
+  color: grey;
+  margin: 10px 0 10px 10px;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .row .sec-sub h1 {
+    font-size: 30px;
+    margin: 20px 20px;
+  }
+}
+
+.wrapper .content .about .row .sec-sub #W img {
+  width: 35px;
+  height: 32px;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .row .sec-sub #W img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.wrapper .content .about .row .sec-support {
+  font-size: 24px;
+  color: grey;
+  margin-left: 12px;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .row .sec-support {
+    font-size: 20px;
+    margin: 0 60px;
+  }
+}
+
+.wrapper .content .about .row .more {
+  margin: 40px 0;
+  padding: 0 !important;
+}
+
+.wrapper .content .about .row .more button {
+  margin-left: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .about .row .more button {
+    margin-right: 18px;
+    padding: 10px 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

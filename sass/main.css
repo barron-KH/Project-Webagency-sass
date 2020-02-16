@@ -292,6 +292,7 @@ html, body {
   position: absolute;
   width: 100%;
   margin-top: 100vh;
+  /*------------services section starts------------*/
 }
 
 .wrapper .content .about {
@@ -383,5 +384,81 @@ html, body {
     margin-right: 18px;
     padding: 10px 50px;
   }
+}
+
+.wrapper .content .services {
+  background: #161616;
+  padding: 140px 0;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .services .container-serv {
+    text-align: center;
+  }
+}
+
+.wrapper .content .services .container-serv .row {
+  width: 100%;
+}
+
+.wrapper .content .services .container-serv .row .sec-number {
+  color: #d3ae87;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Poppins" !important;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .services .container-serv .row .sec-number {
+    margin-left: 35px;
+  }
+}
+
+.wrapper .content .services .container-serv .row .sec-heading {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  padding: 0 !important;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .services .container-serv .row .sec-heading {
+    font-weight: 600;
+    margin: 50px 0 50px 40px;
+  }
+}
+
+.wrapper .content .services .container-serv .row .icon ion-icon {
+  font-size: 36px;
+  color: #d3ae87;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .services .container-serv .row .icon ion-icon {
+    margin-top: 40px;
+  }
+}
+
+.wrapper .content .services .container-serv .row .icon-title {
+  font-size: 28px;
+  margin-bottom: 4px;
+  color: #b6b6b6;
+  font-weight: lighter;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.wrapper .content .services .container-serv .partie-1 {
+  margin: 30px 30px 20px 0;
+}
+
+.wrapper .content .services .container-serv .partie-2 {
+  margin: 30px 30px 20px 0;
+}
+
+.wrapper .content .services .container-serv .to-left {
+  margin-right: -30px;
 }
 /*# sourceMappingURL=main.css.map */

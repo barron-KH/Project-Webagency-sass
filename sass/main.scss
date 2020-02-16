@@ -223,7 +223,7 @@ html, body {
         z-index: 2;
         top: 0px;
         position: fixed;
-        background: #0f0f0f;
+        background: color(sep);
         width: $every;
         height: $every;
         visibility: hidden;
@@ -376,5 +376,81 @@ html, body {
                 }
             }
         }
+
+        /*------------services section starts------------*/
+        .services {
+            background: color(tro);
+            padding: 140px 0;
+    
+            .container-serv {
+                @include iphon-x {
+                    text-align: center;
+                            
+                }
+                
+                .row { 
+                    width: $every;
+
+
+                        
+                    .sec-number {
+                        color: color(pre);
+                        font-weight: bolder;
+                        font-size: 20px;
+                        font-family: "Poppins" !important;
+
+                        @include iphon-x{
+                            margin-left: 35px;
+                        }
+                    }
+                    .sec-heading {
+                        color: color(six);
+                        text-transform: uppercase;
+                        letter-spacing: 4px;
+                        font-size: 18px;
+                        padding: 0 !important ;
+                        font-weight: 800; 
+            
+                        @include iphon-x {
+                            font-weight: 600;
+                            margin: 50px 0 50px 40px ;
+                        }
+                                
+                    }
+                        
+                    .icon ion-icon {
+                        font-size: 36px;
+                        color: color(pre);
+                        @include iphon-x{
+                            margin-top: 40px;
+
+                        }
+                                
+                                
+                    }
+                        
+                    .icon-title {
+                        font-size: 28px;
+                        margin-bottom: 4px;
+                        color: color(hui);
+                        font-weight: lighter;
+                        margin: 10px 0;
+                        font-weight: 400;
+                    }
+                }
+                @for $i from 1 through 2 {
+                    .partie-#{ $i }{
+                        margin: 30px 30px 20px 0;
+                    }
+                }
+                        
+                .to-left {
+                    margin-right: -30px;
+                }
+            }
+        }
     }
 }
+      
+    
+ 

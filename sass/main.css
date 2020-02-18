@@ -44,6 +44,18 @@ html, body {
   opacity: 0;
 }
 
+.wrapper .content .container-achivements .project1::after, .wrapper .content .container-achivements .project2::after, .wrapper .content .container-achivements .project3::after {
+  font-family: "Roboto Mono" sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 4px;
+  position: relative;
+  color: #fff;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
 /*---class to extend--*/
 /*--media query--*/
 /*--media query--*/
@@ -293,6 +305,7 @@ html, body {
   width: 100%;
   margin-top: 100vh;
   /*------------services section starts------------*/
+  /*------------achievements section starts------------*/
 }
 
 .wrapper .content .about {
@@ -460,5 +473,117 @@ html, body {
 
 .wrapper .content .services .container-serv .to-left {
   margin-right: -30px;
+}
+
+.wrapper .content .container-achivements {
+  background-color: #161616;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper .content .container-achivements #achiev {
+  text-align: center;
+  text-transform: uppercase;
+  color: #d3ae87;
+  font-family: "Roboto Mono" sans-serif;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements #achiev {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+.wrapper .content .container-achivements .vertical {
+  margin-top: 40px;
+  border-left: 2px solid;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  color: #d3ae87;
+}
+
+.wrapper .content .container-achivements .space {
+  width: 100%;
+  height: 100px;
+}
+
+.wrapper .content .container-achivements .projects {
+  height: 300px;
+  right: -15px;
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements .projects {
+    width: 100%;
+  }
+}
+
+.wrapper .content .container-achivements .project1 {
+  background: url(../img/creativity.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper .content .container-achivements .project1::after {
+  content: "Creativity .";
+  top: 8%;
+  left: -18%;
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements .project1::after {
+    display: none;
+  }
+}
+
+.wrapper .content .container-achivements .project2 {
+  background: url(../img/kh.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper .content .container-achivements .project2::after {
+  content: "foretime .";
+  top: 39%;
+  left: 98%;
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements .project2::after {
+    display: none;
+  }
+}
+
+.wrapper .content .container-achivements .project3 {
+  background: url(../img/inoovation.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper .content .container-achivements .project3::after {
+  content: "Innovation .";
+  top: 65%;
+  left: -18%;
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements .project3::after {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper .content .container-achivements #achiev {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .wrapper .content .container-achivements .project {
+    width: 100% !important;
+  }
+  .wrapper .content .container-achivements .project1::after, .wrapper .content .container-achivements .project2::after, .wrapper .content .container-achivements .project3::after {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

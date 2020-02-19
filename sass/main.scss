@@ -46,6 +46,17 @@ html, body {
     visibility: hidden;
     opacity: 0;
 }
+%project-x {
+        font-family: "Roboto Mono" sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 4px;
+        position: relative;
+        color: color(qua);
+        display: block;
+        right: 0;
+        bottom: 0;
+}
 
 /*---class to extend--*/
 
@@ -65,6 +76,19 @@ html, body {
     }
 }
 
+@mixin iphon-x {
+    @media (max-width:#{$iphon-x}) {
+        @content;
+    }
+}
+
+@mixin achievements {
+    @media  (max-width: #{$max}) {
+        @content;
+    }
+    
+}
+
 /*--media query--*/
 
 
@@ -72,7 +96,7 @@ html, body {
 
 .wrapper {
 
-/*---------------  header section  --------------*/
+    /*---------------  header section  --------------*/
     .video-container {
         position: $abs;
         width: $every;
@@ -156,6 +180,11 @@ html, body {
             height: 40px;
             top: 20px;
             position: $abs;
+            
+            @include mobile{
+                width: 35px;
+                height: 35px;
+            }
             }
         }    
          #menu {
@@ -212,7 +241,7 @@ html, body {
         z-index: 2;
         top: 0px;
         position: fixed;
-        background: #0f0f0f;
+        background: color(sep);
         width: $every;
         height: $every;
         visibility: hidden;
@@ -276,5 +305,325 @@ html, body {
         }
         
     }
+
+    /*---------------  about section starts  --------------- */
+
+    .content {
+    position: $abs;
+    width: $every;
+    margin-top: $thing;
     
+        .about {
+            padding: 140px 0;
+
+            .container-about {
+                @include iphon-x {
+                    text-align: center;
+                    
+                }
+            }
+
+            .row { 
+                width: $every;
+            
+                .sec-number {
+                    color: color(pre);
+                    font-weight: bolder;
+                    font-size: 20px;
+                    font-family: "Poppins" !important;
+                }
+                .sec-heading {
+                    color: color(six);
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-size: 18px;
+                    padding: 0 !important ;
+                    font-weight: 800; 
+
+                    @include iphon-x {
+                        font-weight: 600;
+                        margin-top: 20px;
+                    }
+                    
+                }
+                .sec-sub {
+                    color: color(six);
+                    margin: 10px 0 10px 10px;
+                    h1 {
+
+                        @include iphon-x {
+                            font-size: 30px;
+                            margin: 20px 20px;
+
+                        }
+                    }
+                    #W img {
+                            width: 35px;
+                            height: 32px;
+
+                            @include iphon-x {
+                                width: 25px;
+                                height: 25px;
+                            }
+                    }
+                }
+                .sec-support {
+                    font-size: 24px;
+                    color: color(six);
+                    margin-left: 12px;
+                    
+                    @include iphon-x {
+                        font-size: 20px;
+                        margin: 0 60px;
+                    }
+                }
+                .more {
+                    margin: 40px 0;
+                    padding: 0 !important ;
+                    button {
+                        @extend %button-basic;
+                        margin-left: 18px;
+                        font-weight: 600;
+                        @include iphon-x {
+                           margin-right: 18px;
+                           padding: 10px 50px;
+
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+        /*------------services section starts------------*/
+        .services {
+            background: color(tro);
+            padding: 140px 0;
+    
+            .container-serv {
+                @include iphon-x {
+                    text-align: center;
+                            
+                }
+                
+                .row { 
+                    width: $every;
+
+
+                        
+                    .sec-number {
+                        color: color(pre);
+                        font-weight: bolder;
+                        font-size: 20px;
+                        font-family: "Poppins" !important;
+
+                        @include iphon-x{
+                            margin-left: 35px;
+                        }
+                    }
+                    .sec-heading {
+                        color: color(six);
+                        text-transform: uppercase;
+                        letter-spacing: 4px;
+                        font-size: 18px;
+                        padding: 0 !important ;
+                        font-weight: 800; 
+            
+                        @include iphon-x {
+                            font-weight: 600;
+                            margin: 50px 0 50px 40px ;
+                        }
+                                
+                    }
+                        
+                    .icon ion-icon {
+                        font-size: 36px;
+                        color: color(pre);
+                        @include iphon-x{
+                            margin-top: 40px;
+
+                        }
+                                
+                                
+                    }
+                        
+                    .icon-title {
+                        font-size: 28px;
+                        margin-bottom: 4px;
+                        color: color(hui);
+                        font-weight: lighter;
+                        margin: 10px 0;
+                        font-weight: 400;
+                    }
+                }
+                @for $i from 1 through 2 {
+                    .partie-#{ $i }{
+                        margin: 30px 30px 20px 0;
+                    }
+                }
+                        
+                .to-left {
+                    margin-right: -30px;
+                }
+            }
+        }
+
+         /*------------achievements section starts------------*/
+
+        .container-achivements{
+            background-color: color(tro);
+            width: $every;
+            overflow-x: hidden;
+            
+            #achiev {
+                text-align: center;
+                text-transform: uppercase;
+                color: color(pre);
+                font-family: "Roboto Mono" sans-serif;
+                font-weight: 900;
+                letter-spacing: 4px;
+                margin-left: 10px;
+                @include achievements {
+                    font-size: 30px;
+                    letter-spacing: 2px;
+                }
+            }
+            .vertical {
+                margin-top: 40px;
+                border-left: 2px solid;
+                height: 80px;
+                position: $abs;
+                left: $center;
+                color: color(pre);
+            }
+            .space {
+                width: $every;
+                height: 100px;
+            }
+            .projects {
+                height: 300px;
+                right: -15px;
+                @include achievements {
+                    width: 100%;
+                }
+            }
+            .project1 {
+                background: url(../img/creativity.png) no-repeat 50% 50%;
+                background-size: cover;
+
+                &::after {
+                    content: "Creativity .";
+                    top: 8%;
+                    left: -18%;
+                    @extend %project-x;
+                    @include achievements {
+                        display: none;
+                    }           
+                }
+            }    
+                .project2 {
+                    background: url(../img/kh.png) no-repeat 50% 50%;
+                    background-size: cover;
+    
+                    &::after {
+                        content: "foretime .";
+                        top: 39%;
+                        left: 98%;
+                        @extend %project-x;
+                        @include achievements {
+                            display: none;
+                        }           
+                    }
+                }
+                .project3 {
+                    background: url(../img/inoovation.png) no-repeat 50% 50%;
+                    background-size: cover;
+    
+                    &::after {
+                        content: "Innovation .";
+                        top: 65%;
+                        left: -18%;
+                        @extend %project-x; 
+                        @include achievements {
+                            display: none;
+                        }           
+                    }
+                }
+        }
+
+        /*----------- our team section starts ------- */
+
+        .team {
+            overflow-x: hidden;
+            .container-team {
+                padding: 180px 0;
+                @include mobile {
+                    text-align: center;
+                }
+
+                
+                .sec-number {
+                    color: color(pre);
+                    font-weight: bolder;
+                    font-size: 20px;
+                    font-family: "Poppins" !important;
+                }
+                .sec-heading {
+                    color: color(six);
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-size: 18px;
+                    padding: 0 !important ;
+                    font-weight: 800;
+                }
+                .members {
+                    margin: 50px 0;
+                    height: 500px;
+                }    
+                    .team-member {
+                        overflow: hidden;
+                    }
+                        .team-img {
+                            height: 593px;
+                            position: relative;
+                        }
+                        .team-one {
+                            background: url(../img/CEO.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-two {
+                            background: url(../img/Co-founder.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-title {
+                           text-align: center;
+                           font-family: 'Roboto mono' sans-serif;
+                           font-size: 700;
+                        }
+                        h5 {
+                           font-size: 38px;
+                           letter-spacing: 2px;
+                           
+                        }
+                        span {
+                           font-size: 20px;
+                           font-weight:bolder;
+                        }
+                        .clss-paddi {
+                           padding: 0;
+                           @include mobile {
+                               margin-top: 50px;
+                               margin-bottom: 50px;
+                           }
+                        }
+                        
+
+
+
+            }
+        }
+    }
 }
+      
+    
+ 

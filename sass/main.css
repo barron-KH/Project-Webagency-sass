@@ -306,6 +306,7 @@ html, body {
   margin-top: 100vh;
   /*------------services section starts------------*/
   /*------------achievements section starts------------*/
+  /*----------- our team section starts ------- */
 }
 
 .wrapper .content .about {
@@ -574,16 +575,84 @@ html, body {
   }
 }
 
-@media (max-width: 992px) {
-  .wrapper .content .container-achivements #achiev {
-    font-size: 30px;
-    letter-spacing: 2px;
+.wrapper .content .team {
+  overflow-x: hidden;
+}
+
+.wrapper .content .team .container-team {
+  padding: 180px 0;
+}
+
+@media (max-width: 900px) {
+  .wrapper .content .team .container-team {
+    text-align: center;
   }
-  .wrapper .content .container-achivements .project {
-    width: 100% !important;
-  }
-  .wrapper .content .container-achivements .project1::after, .wrapper .content .container-achivements .project2::after, .wrapper .content .container-achivements .project3::after {
-    display: none;
+}
+
+.wrapper .content .team .container-team .sec-number {
+  color: #d3ae87;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Poppins" !important;
+}
+
+.wrapper .content .team .container-team .sec-heading {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  padding: 0 !important;
+  font-weight: 800;
+}
+
+.wrapper .content .team .container-team .members {
+  margin: 50px 0;
+  height: 500px;
+}
+
+.wrapper .content .team .container-team .team-member {
+  overflow: hidden;
+}
+
+.wrapper .content .team .container-team .team-img {
+  height: 593px;
+  position: relative;
+}
+
+.wrapper .content .team .container-team .team-one {
+  background: url(../img/CEO.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper .content .team .container-team .team-two {
+  background: url(../img/Co-founder.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper .content .team .container-team .team-title {
+  text-align: center;
+  font-family: 'Roboto mono' sans-serif;
+  font-size: 700;
+}
+
+.wrapper .content .team .container-team h5 {
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.wrapper .content .team .container-team span {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.wrapper .content .team .container-team .clss-paddi {
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .wrapper .content .team .container-team .clss-paddi {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -470,7 +470,7 @@ html, body {
 
          /*------------achievements section starts------------*/
 
-         .container-achivements{
+        .container-achivements{
             background-color: color(tro);
             width: $every;
             overflow-x: hidden;
@@ -549,18 +549,78 @@ html, body {
                         }           
                     }
                 }
-                @media(max-width: 992px) {
-                    #achiev {
-                      font-size: 30px;
-                      letter-spacing: 2px;
-                    }
-                    .project {
-                        width:100% !important;
-                    }
-                    .project1::after, .project2::after, .project3::after {
-                       display: none;
-                    }
+        }
+
+        /*----------- our team section starts ------- */
+
+        .team {
+            overflow-x: hidden;
+            .container-team {
+                padding: 180px 0;
+                @include mobile {
+                    text-align: center;
                 }
+
+                
+                .sec-number {
+                    color: color(pre);
+                    font-weight: bolder;
+                    font-size: 20px;
+                    font-family: "Poppins" !important;
+                }
+                .sec-heading {
+                    color: color(six);
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-size: 18px;
+                    padding: 0 !important ;
+                    font-weight: 800;
+                }
+                .members {
+                    margin: 50px 0;
+                    height: 500px;
+                }    
+                    .team-member {
+                        overflow: hidden;
+                    }
+                        .team-img {
+                            height: 593px;
+                            position: relative;
+                        }
+                        .team-one {
+                            background: url(../img/CEO.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-two {
+                            background: url(../img/Co-founder.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-title {
+                           text-align: center;
+                           font-family: 'Roboto mono' sans-serif;
+                           font-size: 700;
+                        }
+                        h5 {
+                           font-size: 38px;
+                           letter-spacing: 2px;
+                           
+                        }
+                        span {
+                           font-size: 20px;
+                           font-weight:bolder;
+                        }
+                        .clss-paddi {
+                           padding: 0;
+                           @include mobile {
+                               margin-top: 50px;
+                               margin-bottom: 50px;
+                           }
+                        }
+                        
+
+
+
+            }
         }
     }
 }

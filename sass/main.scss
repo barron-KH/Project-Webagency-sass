@@ -88,6 +88,12 @@ html, body {
     }
     
 }
+@mixin team {
+    @media (max-width: #{$team}) {
+        @content;
+    }
+    
+}
 
 /*--media query--*/
 
@@ -554,11 +560,14 @@ html, body {
         /*----------- our team section starts ------- */
 
         .team {
-            overflow-x: hidden;
+            overflow: hidden;
             .container-team {
-                padding: 180px 0;
+                padding: 140px 0;
                 @include mobile {
                     text-align: center;
+                }
+                @include team {
+                    height: 1640px;
                 }
 
                 
@@ -584,7 +593,7 @@ html, body {
                         overflow: hidden;
                     }
                         .team-img {
-                            height: 593px;
+                            height: 499px;
                             position: relative;
                         }
                         .team-one {
@@ -616,11 +625,69 @@ html, body {
                                margin-bottom: 50px;
                            }
                         }
-                        
-
-
-
             }
+        }
+
+        /*--------------- newsletter section starts  --------------- */
+
+        .subscribe {
+            padding: 140px 0;
+            background: color(tro);
+            overflow: hidden;
+            .subscribe-data {
+                max-width: 650px;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+                .sec-heading h1 {
+                    color: color(qua);
+                    margin-bottom: 40px;
+                }
+            }
+            .input-subsc {
+                display: flex;
+                @include team {
+                    flex-direction: column;
+                }
+                .input-form {
+                    text-transform: uppercase;
+                    height: 50px;
+                    border-color: color(qua);
+                    border-radius: 0 !important;
+                    text-align: center;
+                    flex: 1 1 auto;
+                    margin-bottom: 0px;
+                    &:focus {
+                        box-shadow: none !important;
+                        border: none !important;
+                    }
+                    @include team {
+                        margin: 0 50px;
+                    }
+
+                }
+                ::placeholder {
+                    letter-spacing: 4px;
+                    padding: 5px 10px;
+                }
+                span .btn {
+                    min-height: 50px;
+                    padding: 0 30px;
+                    border-radius: 0;
+                    background: #000;
+                    color: color(qua);
+                    font-size: 12px;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    font-family: 'Poppins' sans-serif;
+                    letter-spacing: 2px;
+                    &:hover {
+                        opacity: 0.1;
+                    }
+                }
+                
+            }
+
         }
     }
 }

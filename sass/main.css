@@ -307,6 +307,7 @@ html, body {
   /*------------services section starts------------*/
   /*------------achievements section starts------------*/
   /*----------- our team section starts ------- */
+  /*--------------- newsletter section starts  --------------- */
 }
 
 .wrapper .content .about {
@@ -576,16 +577,22 @@ html, body {
 }
 
 .wrapper .content .team {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .wrapper .content .team .container-team {
-  padding: 180px 0;
+  padding: 140px 0;
 }
 
 @media (max-width: 900px) {
   .wrapper .content .team .container-team {
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .team .container-team {
+    height: 1640px;
   }
 }
 
@@ -615,7 +622,7 @@ html, body {
 }
 
 .wrapper .content .team .container-team .team-img {
-  height: 593px;
+  height: 499px;
   position: relative;
 }
 
@@ -654,5 +661,99 @@ html, body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+}
+
+.wrapper .content .subscribe {
+  padding: 140px 0;
+  background: #161616;
+  overflow: hidden;
+}
+
+.wrapper .content .subscribe .subscribe-data {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper .content .subscribe .subscribe-data .sec-heading h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.wrapper .content .subscribe .input-subsc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .subscribe .input-subsc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapper .content .subscribe .input-subsc .input-form {
+  text-transform: uppercase;
+  height: 50px;
+  border-color: #fff;
+  border-radius: 0 !important;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 0px;
+}
+
+.wrapper .content .subscribe .input-subsc .input-form:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+}
+
+@media (max-width: 767px) {
+  .wrapper .content .subscribe .input-subsc .input-form {
+    margin: 0 50px;
+  }
+}
+
+.wrapper .content .subscribe .input-subsc ::-webkit-input-placeholder {
+  letter-spacing: 4px;
+  padding: 5px 10px;
+}
+
+.wrapper .content .subscribe .input-subsc :-ms-input-placeholder {
+  letter-spacing: 4px;
+  padding: 5px 10px;
+}
+
+.wrapper .content .subscribe .input-subsc ::-ms-input-placeholder {
+  letter-spacing: 4px;
+  padding: 5px 10px;
+}
+
+.wrapper .content .subscribe .input-subsc ::placeholder {
+  letter-spacing: 4px;
+  padding: 5px 10px;
+}
+
+.wrapper .content .subscribe .input-subsc span .btn {
+  min-height: 50px;
+  padding: 0 30px;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: 'Poppins' sans-serif;
+  letter-spacing: 2px;
+}
+
+.wrapper .content .subscribe .input-subsc span .btn:hover {
+  opacity: 0.1;
 }
 /*# sourceMappingURL=main.css.map */

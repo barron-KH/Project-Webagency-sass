@@ -479,7 +479,7 @@ section {
   overflow-x: hidden;
 }
 
-.wrapper .content .container-achivements #achiev {
+.wrapper .content .container-achivements .achiev {
   text-align: center;
   text-transform: uppercase;
   color: #d3ae87;
@@ -490,7 +490,7 @@ section {
 }
 
 @media (max-width: 992px) {
-  .wrapper .content .container-achivements #achiev {
+  .wrapper .content .container-achivements .achiev {
     font-size: 30px;
     letter-spacing: 2px;
   }

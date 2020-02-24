@@ -1,0 +1,82 @@
+        /*--------------- contact section starts here --------------- */
+        
+
+        .contact {
+            overflow: hidden;
+            .container-contact {
+                @include iphon-x{
+                    text-align: center;
+                    margin: 0 20px;
+                }
+                .row {
+                    .sec-number {
+                        @extend %sec-number;
+                         }
+                    }
+                    .sec-heading {
+                        @extend %sec-heading;
+                        font-weight: bolder;
+                        @include iphon-x{
+                            margin-top: 30px;
+                        }
+                    }
+                .row {
+                    .text-title {
+                        margin: 30px 0;
+                        color: #000;
+                        font-size: 20px;
+                        font-family: "Roboto Mono"sans-serif;
+                        font-weight: bold;
+                    }
+                }
+                .row {
+                    #contact-form {
+                        ul {
+                        list-style: none;
+                        margin-bottom: 40px;
+                        border-radius: 0;
+                        
+                      }
+                      
+                            li:last-of-type {
+                            border-bottom: none;
+                            }
+                            
+                            label {
+                                    display: block;
+                                    font-size: 22px;
+                                    color: rgb(97, 97, 97);
+                            }
+                            
+                            input, textarea {
+                                    width: 100%;
+                                    padding: 5px;
+                                    border: none;
+                                    resize: vertical;
+                                    background: transparent;
+                                    color: #101010;
+                                    font-weight: bolder;
+                                    
+                                    &:focus {
+                                        outline: none !important;
+                                        border: none !important;
+                                    }
+                            }
+                            .text-area {
+                                    border-bottom: 1px solid #c9c9c9;
+                            }
+                            
+                            button {
+                                @extend %button-basic;
+                                font-weight: bolder;
+                                @include iphon-x {
+                                    padding: 10px 30px;
+                                }
+
+                            }
+                            
+                        
+                    }
+                }
+            }
+        }

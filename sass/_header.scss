@@ -1,0 +1,58 @@
+    /*---------------  header section  --------------*/
+    .video-container {
+        position: $abs;
+        width: $every;
+        height: $thing;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: $abs;
+            top: 0;
+            left: 0;
+            width: $every;
+            height: $thing;
+            background: color(deu);
+            opacity: 0.8;
+        }
+            video {
+                object-fit: cover;
+                width: 100vw;
+                height: $thing;
+                position: $abs;
+                top: 0;
+                left: 0;
+            }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        position: $abs;
+        top: $center;
+        left: $center;
+        transform: translate(-$center, -$center);
+
+        h1 {
+            color: color(pre);
+            font-size: 80px !important;
+            text-align: center;
+
+            @include mobile {
+                font-size: 34px !important;
+                text-align: center;
+            }
+        }
+        #btn {
+            @extend %button-basic ;
+            color: color(pre);
+            font-weight: bolder;
+            margin-top: 100px;
+            cursor: pointer;
+
+            @include mobile {
+                padding: 10px 20px;
+            }
+        }
+
+    }

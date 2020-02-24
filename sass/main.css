@@ -81,8 +81,9 @@ section {
 /*--media query--*/
 .wrapper {
   /*---------------  header section  --------------*/
+  /*---------------  header section  --------------*/
   /*---------------  navigation  --------------- */
-  /*---------------  about section starts  --------------- */
+  /*---------------  navigation  --------------- */
 }
 
 .wrapper .video-container {
@@ -324,11 +325,19 @@ section {
   position: absolute;
   width: 100%;
   margin-top: 100vh;
+  /*---------------  about section starts  --------------- */
+  /*---------------  about section starts  --------------- */
+  /*------------services section starts------------*/
   /*------------services section starts------------*/
   /*------------achievements section starts------------*/
+  /*------------achievements section starts------------*/
   /*----------- our team section starts ------- */
-  /*--------------- newsletter section starts  --------------- */
+  /*----------- our team section starts ------- */
+  /*--------------- subscribe section starts  --------------- */
+  /*--------------- subscribe section starts  --------------- */
   /*--------------- contact section starts here --------------- */
+  /*--------------- contact section starts here --------------- */
+  /*------------ footer section starts here-----------*/
   /*------------ footer section starts here-----------*/
 }
 

@@ -1,0 +1,53 @@
+        /*------------ footer section starts here-----------*/
+
+        .footer {
+            background: color(tro);
+            overflow: hidden;
+            .container {
+                padding: 160px 0;
+                @include mobile {
+                   
+                }
+                #address {
+                    text-align: center ;
+                    p {
+                        color: color(six);
+                        font-weight: lighter;
+                        font-size: 24px;
+                    }
+                    h4 {
+                        font-size: 24px;
+                        font-weight: lighter;
+                        color: color(qua);
+                    }
+                }
+                #media {
+                    text-align: center;
+                    ul {
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            font-weight: lighter;
+                            color: color(pre);
+                            padding-left: 20px;
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+                #mail {
+                    font-size: 24px;
+                    text-align: center;
+                    p {
+                        color: color(six);
+                        font-weight: lighter;
+                        font-size: 24px;
+                    }
+                    h4 {
+                        font-size: 24px;
+                        font-weight: lighter;
+                        color: color(qua);
+                    }
+                }
+            }
+        }
+  

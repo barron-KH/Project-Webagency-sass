@@ -1,0 +1,76 @@
+/*---------------  about section starts  --------------- */
+
+.about {
+
+    .container-about {
+        @include iphon-x {
+            text-align: center;
+            margin-left: 20px;
+            
+        }
+    }
+
+    .row { 
+        width: $every;
+    
+        .sec-number {
+            @extend %sec-number;
+        }
+        .sec-heading {
+            @extend %sec-heading;
+
+            @include iphon-x {
+                font-weight: 600;
+                margin-top: 20px;
+                margin-left: 24px;
+            }
+            
+        }
+        .sec-sub {
+            color: color(six);
+            margin: 10px 0 10px 10px;
+            h1 {
+
+                @include iphon-x {
+                    font-size: 30px;
+                    margin: 20px 20px;
+
+                }
+            }
+            #W img {
+                    width: 35px;
+                    height: 32px;
+
+                    @include iphon-x {
+                        width: 25px;
+                        height: 25px;
+                    }
+            }
+        }
+        .sec-support {
+            font-size: 24px;
+            color: color(six);
+            margin-left: 12px;
+            
+            @include iphon-x {
+                font-size: 20px;
+                margin: 0 60px;
+            }
+        }
+        .more {
+            margin: 40px 0;
+            padding: 0 !important ;
+            button {
+                @extend %button-basic;
+                margin-left: 18px;
+                font-weight: 600;
+                @include iphon-x {
+                   margin-right: 18px;
+                   padding: 10px 50px;
+
+                   
+                }
+            }
+        }
+    }
+}

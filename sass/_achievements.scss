@@ -1,0 +1,82 @@
+ /*------------achievements section starts------------*/
+
+.container-achivements{
+    background-color: color(tro);
+    width: $every;
+    overflow-x: hidden;
+    
+    #achiev {
+        text-align: center;
+        text-transform: uppercase;
+        color: color(pre);
+        font-family: "Roboto Mono" sans-serif;
+        font-weight: 900;
+        letter-spacing: 4px;
+        margin-left: 10px;
+        @include achievements {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+    .vertical {
+        margin-top: 40px;
+        border-left: 2px solid;
+        height: 80px;
+        position: $abs;
+        left: $center;
+        color: color(pre);
+    }
+    .space {
+        width: $every;
+        height: 100px;
+    }
+    .projects {
+        height: 300px;
+        right: -15px;
+        @include achievements {
+            width: 100%;
+        }
+    }
+    .project1 {
+        background: url(../img/creativity.png) no-repeat 50% 50%;
+        background-size: cover;
+
+        &::after {
+            content: "Creativity .";
+            top: 8%;
+            left: -18%;
+            @extend %project-x;
+            @include achievements {
+                display: none;
+            }           
+        }
+    }    
+        .project2 {
+            background: url(../img/kh.png) no-repeat 50% 50%;
+            background-size: cover;
+
+            &::after {
+                content: "foretime .";
+                top: 39%;
+                left: 98%;
+                @extend %project-x;
+                @include achievements {
+                    display: none;
+                }           
+            }
+        }
+        .project3 {
+            background: url(../img/inoovation.png) no-repeat 50% 50%;
+            background-size: cover;
+
+            &::after {
+                content: "Innovation .";
+                top: 65%;
+                left: -18%;
+                @extend %project-x; 
+                @include achievements {
+                    display: none;
+                }           
+            }
+        }
+}

@@ -1,0 +1,70 @@
+        /*----------- our team section starts ------- */
+
+        .team {
+            overflow: hidden;
+            .container-team {
+                margin-top: 100px;
+                margin-bottom: 150px;
+                @include mobile {
+                    text-align: center;
+                }
+                @include iphon-x() {
+                    height: 1500px;
+                    margin-bottom: 0px;
+                }
+
+                
+                .sec-number {
+                    @extend %sec-number;
+                }
+                .sec-heading {
+                    @extend %sec-heading;
+                    @include iphon-x {
+                        margin-top: 30px;
+                    }
+                }
+                .members {
+                    margin: 50px 0;
+                    height: 500px;
+                }    
+                    .team-member {
+                        overflow: hidden;
+                    }
+                        .team-img {
+                            height: 499px;
+                            position: relative;
+                            @include iphon-x {
+                                margin: 0 30px;
+                            }
+                        }
+                        .team-one {
+                            background: url(../img/CEO.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-two {
+                            background: url(../img/Co-founder.png) no-repeat 50% 50%;
+                            background-size: cover;
+                        }
+                        .team-title {
+                           text-align: center;
+                           font-family: 'Roboto mono' sans-serif;
+                           font-size: 700;
+                        }
+                        h5 {
+                           font-size: 38px;
+                           letter-spacing: 2px;
+                           
+                        }
+                        span {
+                           font-size: 20px;
+                           font-weight:bolder;
+                        }
+                        .clss-paddi {
+                           padding: 0;
+                           @include mobile {
+                               margin-top: 50px;
+                               margin-bottom: 50px;
+                           }
+                        }
+            }
+        }

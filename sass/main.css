@@ -81,8 +81,9 @@ section {
 /*--media query--*/
 .wrapper {
   /*---------------  header section  --------------*/
+  /*---------------  header section  --------------*/
   /*---------------  navigation  --------------- */
-  /*---------------  about section starts  --------------- */
+  /*---------------  navigation  --------------- */
 }
 
 .wrapper .video-container {
@@ -324,11 +325,20 @@ section {
   position: absolute;
   width: 100%;
   margin-top: 100vh;
+  /*---------------  about section starts  --------------- */
+  /*---------------  about section starts  --------------- */
+  /*------------services section starts------------*/
   /*------------services section starts------------*/
   /*------------achievements section starts------------*/
+  /*------------achievements section starts------------*/
   /*----------- our team section starts ------- */
-  /*--------------- newsletter section starts  --------------- */
+  /*----------- our team section starts ------- */
+  /*--------------- subscribe section starts  --------------- */
+  /*--------------- subscribe section starts  --------------- */
   /*--------------- contact section starts here --------------- */
+  /*--------------- contact section starts here --------------- */
+  /*------------ footer section starts here-----------*/
+  /*------------ footer section starts here-----------*/
 }
 
 @media (max-width: 767px) {
@@ -812,5 +822,63 @@ section {
   .wrapper .content .contact .container-contact .row #contact-form button {
     padding: 10px 30px;
   }
+}
+
+.wrapper .content .footer {
+  background: #161616;
+  overflow: hidden;
+}
+
+.wrapper .content .footer .container {
+  padding: 160px 0;
+}
+
+.wrapper .content .footer .container #address {
+  text-align: center;
+}
+
+.wrapper .content .footer .container #address p {
+  color: grey;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.wrapper .content .footer .container #address h4 {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.wrapper .content .footer .container #media {
+  text-align: center;
+}
+
+.wrapper .content .footer .container #media ul {
+  list-style: none;
+}
+
+.wrapper .content .footer .container #media ul li {
+  display: inline-block;
+  font-weight: lighter;
+  color: #d3ae87;
+  padding-left: 20px;
+  font-size: 18px !important;
+}
+
+.wrapper .content .footer .container #mail {
+  font-size: 24px;
+  text-align: center;
+}
+
+.wrapper .content .footer .container #mail p {
+  color: grey;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.wrapper .content .footer .container #mail h4 {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

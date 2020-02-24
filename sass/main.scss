@@ -117,22 +117,23 @@ section {
 .wrapper {
 
     /*---------------  header section  --------------*/
+    
     @import "header";
 
     /*---------------  navigation  --------------- */ 
 
     @import "navigation";
 
-    
-
     .content {
     position: $abs;
     width: $every;
     margin-top: $thing;
     /*---------------  about section starts  --------------- */
+
         @import "about";
 
         /*------------services section starts------------*/
+
         @import "services";
 
          /*------------achievements section starts------------*/
@@ -145,21 +146,15 @@ section {
 
         /*--------------- subscribe section starts  --------------- */
     
-
         @import "subscribe";
 
-
         /*--------------- contact section starts here --------------- */
-        
 
         @import "contact";
 
         /*------------ footer section starts here-----------*/
 
         @import "Footer";
-
-  
-
     }
 }
 
